@@ -15,15 +15,15 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.tizi.pro", custom_domain = true },
-#   { pattern = "quay.tizi.pro", custom_domain = true },
-#   { pattern = "gcr.tizi.pro", custom_domain = true },
-#   { pattern = "k8s-gcr.tizi.pro", custom_domain = true },
-#   { pattern = "k8s.tizi.pro", custom_domain = true },
-#   { pattern = "ghcr.tizi.pro", custom_domain = true },
-#   { pattern = "cloudsmith.tizi.pro", custom_domain = true },
-# ]
+routes = [
+ { pattern = "docker.tizi.pro", custom_domain = true },
+ { pattern = "quay.tizi.pro", custom_domain = true },
+ { pattern = "gcr.tizi.pro", custom_domain = true },
+ { pattern = "k8s-gcr.tizi.pro", custom_domain = true },
+ { pattern = "k8s.tizi.pro", custom_domain = true },
+ { pattern = "ghcr.tizi.pro", custom_domain = true },
+ { pattern = "cloudsmith.tizi.pro", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
